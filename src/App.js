@@ -1,13 +1,21 @@
+import Header from "./componentes/header";
+import Pesquisa from "./componentes/pesquisa";
+import UltimosLancamentos from "./componentes/ultimosLancamentos";
+import styled from "styled-components";
 
-import Header from './componentes/header';
-import  UltimosLancamentos from './componentes/ultimosLancamentos';  
+const AppContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(90deg, #002f52 35%, #326589 165%);
+`;
 
-function App(){
+function App() {
   return (
-    <div className="App">
+    <AppContainer>
       <Header />
-      <UltimosLancamentos/>
-    </div>
+      <Pesquisa />
+      <UltimosLancamentos />
+    </AppContainer>
   );
 }
 
