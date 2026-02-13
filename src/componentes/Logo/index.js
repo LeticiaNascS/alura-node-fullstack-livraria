@@ -1,22 +1,24 @@
-import logo from '../../Imagens/logotransp.png';
-import styled from 'styled-components';
+import logo from "../../Imagens/logo.svg";
+import styled from "styled-components";
 
 const LogoContainer = styled.div`
-   height: 130px;
-   display: flex;
-   align-items: right;
-   margin-left: 20px;
-    `;
-    
-    const LogoImage = styled.img`
-    height: 100%;
-    `;  
+  display: flex;
+  font-size: 30px;
+`;
+
+const LogoImage = styled.img`
+  margin-right: 10px;
+`;
 
 function Logo() {
-    return (
-        <LogoContainer>
-            <LogoImage src={logo} alt='logo' />
-        </LogoContainer>
-    );
+  return (
+    <LogoContainer>
+      <LogoImage src={logo} alt="logo" />
+      <p>
+        <strong>Alura</strong>Books
+      </p>
+    </LogoContainer>
+  );
 }
+
 export default Logo;
