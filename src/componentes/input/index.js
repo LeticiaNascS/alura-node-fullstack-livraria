@@ -1,0 +1,29 @@
+import styled from "styled-components"; 
+
+const Input = styled.input`
+        display: center;
+        border: 1px solid #1c0f0fe1;
+        background: transparent;
+        border: 1px solid #6B8E6E;
+        border-radius: 30px;
+        padding: 10px;
+        width: 110%;
+        color: #000000;
+        font-size: 16px;
+        margin-bottom: 10px;
+
+        &::placeholder {
+                color: #231616;
+                font-size: 16px;
+                text-align: center;
+                
+        }
+
+
+`
+
+export default Input
+
+
+
+
