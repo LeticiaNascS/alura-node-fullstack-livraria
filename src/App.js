@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Header from "./componentes/header";
 import Pesquisa from "./componentes/pesquisa";
 import UltimosLancamentos from "./componentes/ultimosLancamentos";
@@ -16,6 +17,18 @@ function App() {
       <Pesquisa />
       <UltimosLancamentos />
     </AppContainer>
+=======
+
+import Header from './componentes/header';
+import  UltimosLancamentos from './componentes/ultimosLancamentos';  
+
+function App(){
+  return (
+    <div className="App">
+      <Header />
+      <UltimosLancamentos/>
+    </div>
+>>>>>>> origin/master
   );
 }
 
