@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 import styled from "styled-components";
-
+import { Link } from "react-router-dom"
 const Opcao = styled.li`
   font-size: 16px;
   display: flex;
@@ -17,48 +16,18 @@ const Opcoes = styled.ul`
   display: flex;
 `;
 
-const textoOpcoes = ["CATEGORIAS", "FAVORITOS", "MINHA ESTANTE"];
+const textoOpcoes = ["CATEGORIAS", "FAVORITOS", " ESTANTE"];
 
 function OpcoesHeader() {
   return (
     <Opcoes>
       {textoOpcoes.map((texto) => (
-        <Opcao>
-          <p>{texto}</p>
-        </Opcao>
+        <Link to={`/${texto.toLowerCase()}`}> <Opcao>
+         <p>{texto}</p>
+        </Opcao> </Link>
       ))}
     </Opcoes>
   );
 }
 
 export default OpcoesHeader;
-=======
-import styled from 'styled-components';
-
-const menuItens = ['Buquê de Flores', 'Arranjos', 'Flores', 'Adubo', 'Contato'];
-const Menu = styled.ul`
-    display: flex;
-    flex: 3;
-    gap: 30px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: #6B8E6E;
-    justify-content: center;
-`;
-const Icone = styled.li`
-list-style: none;
-`;
-
-
-function componentesHeaderMenu() {
-    return (
-        <Menu>
-        {menuItens.map ((texto) => (
-          <Icone>{texto}</Icone>
-        ))}
-        </Menu> 
-    );
-}
-export default componentesHeaderMenu;
->>>>>>> origin/master
